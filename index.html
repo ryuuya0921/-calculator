@@ -9,15 +9,19 @@
 <body>
   <h1>電卓</h1>
 
-  <table class="mein">
+  <table>
     <tbody>
       
+    <div class="display">
       <tr>
         <td colspan="4">
-          <input type="text" class="display" name="display" value="">
+          <input type="text" class="display" name="display" value=""disabled>
         </td>
       </tr>
+    </div>
 
+      <!-- 液晶画面部分 -->
+    
       <tr>
         <td><input type="button" value="7"></td>
         <td><input type="button" value="8"></td>
@@ -42,12 +46,16 @@
         <td><input type="button" value="."></td>
         <td><input type="button" value="/"></td>
       </tr>
+
+    <div class="botton">  
       <tr>
         <td colspan="2"><input type="button" value="AC"></td>
         <td colspan="2"><input type="button" value="="></td>
       </tr>
+    </div>  
     </tbody>
   </table>
+  <!-- ボタン部分 -->
 
   <script src="style.js"></script>
 </body>

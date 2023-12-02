@@ -1,54 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lag="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+<meta charset="utf-8">
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="main.css">
+
 </head>
+
 <body>
-  <h1>電卓</h1>
+<h3>電卓</h3>
 
-  <table class="mein">
-    <tbody>
-      
-      <tr>
-        <td colspan="4">
-          <input type="text" class="display" name="display" value="">
-        </td>
-      </tr>
+<input type="text" id="result">
 
-      <tr>
-        <td><input type="button" value="7"></td>
-        <td><input type="button" value="8"></td>
-        <td><input type="button" value="9"></td>
-        <td><input type="button" value="+"></td>
-      </tr>
-      <tr>
-        <td><input type="button" value="4"></td>
-        <td><input type="button" value="5"></td>
-        <td><input type="button" value="6"></td>
-        <td><input type="button" value="-"></td>
-      </tr>
-      <tr>
-        <td><input type="button" value="1"></td>
-        <td><input type="button" value="2"></td>
-        <td><input type="button" value="3"></td>
-        <td><input type="button" value="*"></td>
-      </tr>
-      <tr>
-        <td><input type="button" value="0"></td>
-        <td><input type="button" value="00"></td>
-        <td><input type="button" value="."></td>
-        <td><input type="button" value="/"></td>
-      </tr>
-      <tr>
-        <td colspan="2"><input type="button" value="AC"></td>
-        <td colspan="2"><input type="button" value="="></td>
-      </tr>
-    </tbody>
-  </table>
+<div>
 
-  <script src="style.js"></script>
+<input type="button" value="7" onclick="number(this)">
+
+<input type="button" value="8" onclick="number(this)">
+
+<input type="button" value="9" onclick="number(this)">
+
+<input type="button" value="/" onclick="edit(this)">
+
+</div>
+
+<div>
+
+<input type="button" value="4" onclick="number(this)">
+
+<input type="button" value="5" onclick="number(this)">
+
+<input type="button" value="6" onclick="number(this)">
+
+<input type="button" value="*" onclick="edit(this)">
+
+</div>
+
+<div>
+
+<input type="button" value="1" onclick="number(this)">
+
+<input type="button" value="2" onclick="number(this)">
+
+<input type="button" value="3" onclick="number(this)">
+
+<input type="button" value="-" onclick="edit(this)">
+
+</div>
+
+<div>
+
+<input type="button" value="0" onclick="number(this)">
+
+<input type="button" value="00" onclick="number(this)">
+
+<input type="button" value="." onclick="edit(this)">
+
+<input type="button" value="+" onclick="edit(this)">
+
+</div>
+
+<div>
+
+<input class="clear" type="button" value="AC" onclick="update()">
+
+<input class="enter" type="button" value="=" onclick="calc()">
+
+</div>
+<script src="style.js"></script>
 </body>
 </html>

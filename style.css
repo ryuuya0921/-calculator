@@ -20,12 +20,13 @@ th {
 	background: #999999;
 }
 
+
 .display {
-  background-color: black;
+  background-color: rgb(240, 230, 230);
   height: 100%;
   width: 95%;
+  text-align: right; 
 }
-
 
 table {
   /* 電卓のサイズ */
@@ -38,4 +39,8 @@ input {
   /* ボタンのサイズ */
   width: 60px;
   height: 50px;
+}
+
+tr {
+  text-align: right;
 }

@@ -1,29 +1,44 @@
-#result{
+table , td, th {
+	border: 1px solid #0004dc;
+	border-collapse: collapse;
+
+}
+td, th {
+	padding: 10px;
+	width: 30px;
+	height: 25px;
+}
+th {
+	background: #999999;
+}
+.even {
+	background: #999999;
+}
+.odd {
+	background: #999999;
+}
+
+
+.display {
+  background-color: rgb(240, 230, 230);
+  height: 100%;
+  width: 95%;
+  text-align: right; 
+}
+
+table {
+  /* 電卓のサイズ */
+  width: 300px;
+  height: 400px;
+  text-align: center;
+}
+
+input {
+  /* ボタンのサイズ */
+  width: 60px;
+  height: 50px;
+}
+
+tr {
   text-align: right;
-  width:170px;
-  height:40px;
-  margin-bottom: 10px
-}
-
-div{
-  justify-content:space-evenly;
-  padding-top: 10px
-
-}
-
-input{
-  display:inline-block;
-  width: 40px;
-  height:40px;
-  text-align: center
-}
-
-.clear{
-  width:85px;
-  height:40px;
-}
-
-.enter{
-  width:85px;
-  height:40px;
 }

@@ -1,16 +1,61 @@
-function get_calc(btn) {
-  if(btn.value == "=") {
-    document.calculator.display.value = eval(document.calculator.display.value);
-  } else if (btn.value == "C") {
-    document.calculator.display.value = "";
-  } else {
-    if (btn.value == "*") {
-      btn.value = "*";
-    } else if (btn.value == "÷") {
-      btn.value = "/";
-    }
-    document.calculator.display.value += btn.value;
-    document.calculator.multi_btn.value = "*";
-    document.calculator.div_btn.value = "÷";
-  }
+let result = document.getElementById("display");
+
+
+
+function get_calc(elem) {
+
+if (result.value === "0"){
+
+
+} else {
+
+
+result.value = result.value + elem.value;
+
+}
+
+}
+
+
+
+function edit(elem) {
+
+if (result.value.slice(-1) === '+' ){
+
+return;
+
+} else if (result.value.slice(-1) === '-' ){
+
+return;
+
+} else if (result.value.slice(-1) === '*' ){
+
+return;
+
+} else if (result.value.slice(-1) === '÷' ){
+
+return;
+
+} else {
+
+result.value = result.value + elem.value;
+
+}
+
+}
+
+
+
+function calc() {
+
+result.value = new Function("return " + result.value)();
+
+}
+
+
+
+function update(){
+
+result.value = '';
+
 }

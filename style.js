@@ -50,11 +50,7 @@ result.value = result.value + elem.value;
 
 function calc() {
 
-  try {
-    result.value = eval(result.value);
-} catch (error) {
-    result.value = "";
-}
+result.value = new Function("return " + result.value)();
 
 }
 

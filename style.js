@@ -1,4 +1,4 @@
-let result = document.getElementById("display");
+let result = document.getElementById ("display");
 
 
 
@@ -50,7 +50,11 @@ result.value = result.value + elem.value;
 
 function calc() {
 
-result.value = new Function("return" + result.value)();
+  try {
+    result.value = eval(result.value);
+} catch (error) {
+    result.value = "";
+}
 
 }
 
